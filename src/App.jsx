@@ -1,7 +1,7 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
+// import "./App.css";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -16,35 +16,35 @@ function App() {
 					</div>
 					<div id="titleScreenButtonContainer">
 						<div
-							class="titleScreen-button"
+							className="titleScreen-button"
 							id="titleScreen-playButton"
 						>
 							Play
 						</div>
 						<div
-							class="titleScreen-button"
+							className="titleScreen-button"
 							id="titleScreen-helpButton"
 						>
 							How to play
 						</div>
 						<div
-							class="titleScreen-button"
+							className="titleScreen-button"
 							id="titleScreen-statsButton"
 						>
 							Stats
 						</div>
 					</div>
 				</div>
-				<div id="help" class="modal">
-					<div class="modal-content">
-						<div class="closeRow">
-							<div class="close">&times;</div>
+				<div id="help" className="modal">
+					<div className="modal-content">
+						<div className="closeRow">
+							<div className="close">&times;</div>
 						</div>
 						<h2>How to play Trigram</h2>
 						<ul>
 							<li>
 								A <em>Trigram</em> is a sequence of 3 letters,
-								like <span class="help-trigram">CAT</span>
+								like <span className="help-trigram">CAT</span>
 							</li>
 							<li>
 								Make increasingly long words containing the
@@ -65,35 +65,42 @@ function App() {
 						<ul>
 							<li>
 								Trigram of the day:{" "}
-								<span class="help-trigram">CAT</span>
+								<span className="help-trigram">CAT</span>
 							</li>
 							<li>
 								4-letter word:{" "}
-								<span class="help-trigram-subtle">CAT</span>S
+								<span className="help-trigram-subtle">CAT</span>
+								S
 							</li>
 							<li>
 								5-letter word:{" "}
-								<span class="help-trigram-subtle">CAT</span>ER
+								<span className="help-trigram-subtle">CAT</span>
+								ER
 							</li>
 							<li>
 								6-letter word:{" "}
-								<span class="help-trigram-subtle">CAT</span>SUP
+								<span className="help-trigram-subtle">CAT</span>
+								SUP
 							</li>
 							<li>
 								7-letter word: S
-								<span class="help-trigram-subtle">CAT</span>TER
+								<span className="help-trigram-subtle">CAT</span>
+								TER
 							</li>
 							<li>
 								8-letter word: DELI
-								<span class="help-trigram-subtle">CAT</span>E
+								<span className="help-trigram-subtle">CAT</span>
+								E
 							</li>
 							<li>
 								9-letter word: DELI
-								<span class="help-trigram-subtle">CAT</span>ES
+								<span className="help-trigram-subtle">CAT</span>
+								ES
 							</li>
 							<li>
 								10-letter word: DELI
-								<span class="help-trigram-subtle">CAT</span>ELY
+								<span className="help-trigram-subtle">CAT</span>
+								ELY
 							</li>
 							<li>Can you continue the streak??</li>
 						</ul>
@@ -115,122 +122,122 @@ function App() {
 				</div>
 				<div id="game">
 					<div id="jumbotron">
-						<div id="scoreWidget" class="jumbotron-widget">
-							<p class="widget-title" id="scoreTitle">
+						<div id="scoreWidget" className="jumbotron-widget">
+							<p className="widget-title" id="scoreTitle">
 								score
 							</p>
-							<p class="widget-value" id="score">
+							<p className="widget-value" id="score">
 								0
 							</p>
 						</div>
-						<div id="trigramWidget" class="jumbotron-widget">
-							<p class="widget-value" id="trigram">
+						<div id="trigramWidget" className="jumbotron-widget">
+							<p className="widget-value" id="trigram">
 								CAR
 							</p>
 						</div>
-						<div id="timerWidget" class="jumbotron-widget">
-							<p class="widget-title" id="timerTitle">
+						<div id="timerWidget" className="jumbotron-widget">
+							<p className="widget-title" id="timerTitle">
 								timer
 							</p>
-							<p class="widget-value" id="timer">
+							<p className="widget-value" id="timer">
 								0
 							</p>
 						</div>
 					</div>
 					<div id="level"></div>
 					<div id="keyboard">
-						<div class="keyboard-row">
-							<button class="keyboard-key" data-keyname="Q">
+						<div className="keyboard-row">
+							<button className="keyboard-key" data-keyname="Q">
 								Q
 							</button>
-							<button class="keyboard-key" data-keyname="W">
+							<button className="keyboard-key" data-keyname="W">
 								W
 							</button>
-							<button class="keyboard-key" data-keyname="E">
+							<button className="keyboard-key" data-keyname="E">
 								E
 							</button>
-							<button class="keyboard-key" data-keyname="R">
+							<button className="keyboard-key" data-keyname="R">
 								R
 							</button>
-							<button class="keyboard-key" data-keyname="T">
+							<button className="keyboard-key" data-keyname="T">
 								T
 							</button>
-							<button class="keyboard-key" data-keyname="Y">
+							<button className="keyboard-key" data-keyname="Y">
 								Y
 							</button>
-							<button class="keyboard-key" data-keyname="U">
+							<button className="keyboard-key" data-keyname="U">
 								U
 							</button>
-							<button class="keyboard-key" data-keyname="I">
+							<button className="keyboard-key" data-keyname="I">
 								I
 							</button>
-							<button class="keyboard-key" data-keyname="O">
+							<button className="keyboard-key" data-keyname="O">
 								O
 							</button>
-							<button class="keyboard-key" data-keyname="P">
+							<button className="keyboard-key" data-keyname="P">
 								P
 							</button>
 						</div>
-						<div class="keyboard-row">
-							<button class="keyboard-key" data-keyname="A">
+						<div className="keyboard-row">
+							<button className="keyboard-key" data-keyname="A">
 								A
 							</button>
-							<button class="keyboard-key" data-keyname="S">
+							<button className="keyboard-key" data-keyname="S">
 								S
 							</button>
-							<button class="keyboard-key" data-keyname="D">
+							<button className="keyboard-key" data-keyname="D">
 								D
 							</button>
-							<button class="keyboard-key" data-keyname="F">
+							<button className="keyboard-key" data-keyname="F">
 								F
 							</button>
-							<button class="keyboard-key" data-keyname="G">
+							<button className="keyboard-key" data-keyname="G">
 								G
 							</button>
-							<button class="keyboard-key" data-keyname="H">
+							<button className="keyboard-key" data-keyname="H">
 								H
 							</button>
-							<button class="keyboard-key" data-keyname="J">
+							<button className="keyboard-key" data-keyname="J">
 								J
 							</button>
-							<button class="keyboard-key" data-keyname="K">
+							<button className="keyboard-key" data-keyname="K">
 								K
 							</button>
-							<button class="keyboard-key" data-keyname="L">
+							<button className="keyboard-key" data-keyname="L">
 								L
 							</button>
 						</div>
-						<div class="keyboard-row">
+						<div className="keyboard-row">
 							<button
-								class="keyboard-key"
+								className="keyboard-key"
 								data-enter="true"
 								id="enterKey"
 							>
 								↵
 							</button>
-							<button class="keyboard-key" data-keyname="Z">
+							<button className="keyboard-key" data-keyname="Z">
 								Z
 							</button>
-							<button class="keyboard-key" data-keyname="X">
+							<button className="keyboard-key" data-keyname="X">
 								X
 							</button>
-							<button class="keyboard-key" data-keyname="C">
+							<button className="keyboard-key" data-keyname="C">
 								C
 							</button>
-							<button class="keyboard-key" data-keyname="V">
+							<button className="keyboard-key" data-keyname="V">
 								V
 							</button>
-							<button class="keyboard-key" data-keyname="B">
+							<button className="keyboard-key" data-keyname="B">
 								B
 							</button>
-							<button class="keyboard-key" data-keyname="N">
+							<button className="keyboard-key" data-keyname="N">
 								N
 							</button>
-							<button class="keyboard-key" data-keyname="M">
+							<button className="keyboard-key" data-keyname="M">
 								M
 							</button>
 							<button
-								class="keyboard-key"
+								className="keyboard-key"
 								data-delete="true"
 								id="backspaceKey"
 							>
