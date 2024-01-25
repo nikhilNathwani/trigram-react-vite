@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Keyboard from "./components/Keyboard";
+import TitleScreen from "./components/modals/TitleScreen";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
 // import "./App.css";
@@ -9,32 +10,7 @@ function App() {
 
 	return (
 		<div id="app">
-			<div id="titleScreen">
-				<div id="titleScreenTitleContainer">
-					<h1>Trigram</h1>
-					<h3>When 5-letter words aren't enough</h3>
-				</div>
-				<div id="titleScreenButtonContainer">
-					<div
-						className="titleScreen-button"
-						id="titleScreen-playButton"
-					>
-						Play
-					</div>
-					<div
-						className="titleScreen-button"
-						id="titleScreen-helpButton"
-					>
-						How to play
-					</div>
-					<div
-						className="titleScreen-button"
-						id="titleScreen-statsButton"
-					>
-						Stats
-					</div>
-				</div>
-			</div>
+			<TitleScreen></TitleScreen>
 			<div id="help" className="modal">
 				<div className="modal-content">
 					<div className="closeRow">
