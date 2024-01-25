@@ -1,3 +1,5 @@
+import "./TitleScreen.css";
+
 export default function TitleScreen() {
 	return (
 		<div id="titleScreen">

@@ -1,6 +1,8 @@
+import "./HelpScreen.css";
+
 export default function HelpScreen() {
 	return (
-		<div id="help" className="modal">
+		<div id="helpScreen" className="modal">
 			<div className="modal-content">
 				<div className="closeRow">
 					<div className="close">&times;</div>
