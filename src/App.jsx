@@ -11,7 +11,7 @@ import Keyboard from "./components/Keyboard";
 // import viteLogo from "/vite.svg";
 // import "./App.css";
 
-function App() {
+export default function App() {
 	const [count, setCount] = useState(0);
 
 	return (
@@ -19,13 +19,11 @@ function App() {
 			<TitleScreen></TitleScreen>
 			<HelpScreen></HelpScreen>
 			<div id="game">
-				<Header></Header>
-				<Score></Score>
+				<Header trigram={"CAR"}></Header>
+				<Score score={0} scoreMax={12}></Score>
 				<Level></Level>
 				<Keyboard></Keyboard>
 			</div>
 		</div>
 	);
 }
-
-export default App;

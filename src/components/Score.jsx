@@ -1,3 +1,7 @@
-export default function Level() {
-	return <div id="score">Score: 0/12</div>;
+export default function Score({ score, scoreMax }) {
+	return (
+		<div id="score">
+			Score: {score}/{scoreMax}
+		</div>
+	);
 }
