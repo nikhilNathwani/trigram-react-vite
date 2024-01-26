@@ -1,3 +1,3 @@
-export default function Level() {
-	return <div id="level"></div>;
+export default function Level({ targetLength }) {
+	return <div id="level">Target length: {targetLength}</div>;
 }

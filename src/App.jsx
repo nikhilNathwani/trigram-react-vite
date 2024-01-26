@@ -11,17 +11,32 @@ import Keyboard from "./components/Keyboard";
 // import viteLogo from "/vite.svg";
 // import "./App.css";
 
+const trigram = "CAT";
+const wordLength_start = 4;
+const wordLength_max = 11;
+
 export default function App() {
-	const [count, setCount] = useState(0);
+	const [wordLengthCurrent, setWordLengthCurrent] =
+		useState(wordLength_start);
+	const [lettersProvided, setLettersProvided] = useState(
+		Array.from({ length: 1 + wordLength_max - wordLength_start }, () => "")
+	);
 
 	return (
 		<div id="app">
 			<TitleScreen></TitleScreen>
 			<HelpScreen></HelpScreen>
 			<div id="game">
-				<Header trigram={"CAR"}></Header>
-				<Score score={0} scoreMax={12}></Score>
-				<Level></Level>
+				<Header trigram={trigram}></Header>
+				<Score
+					score={
+						wordLength_start == wordLengthCurrent
+							? 0
+							: wordLengthCurrent - 1
+					}
+					scoreMax={wordLength_max}
+				></Score>
+				<Level targetLength={wordLengthCurrent}></Level>
 				<Keyboard></Keyboard>
 			</div>
 		</div>
