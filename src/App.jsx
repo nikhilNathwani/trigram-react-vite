@@ -3,6 +3,7 @@ import { useState } from "react";
 import TitleScreen from "./components/modals/TitleScreen";
 import HelpScreen from "./components/modals/HelpScreen";
 import Header from "./components/Header";
+import Score from "./components/Score";
 import Level from "./components/Level";
 import Keyboard from "./components/Keyboard";
 
@@ -19,6 +20,7 @@ function App() {
 			<HelpScreen></HelpScreen>
 			<div id="game">
 				<Header></Header>
+				<Score></Score>
 				<Level></Level>
 				<Keyboard></Keyboard>
 			</div>

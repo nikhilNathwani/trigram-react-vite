@@ -1,3 +1,3 @@
-export default function Keyboard() {
+export default function Level() {
 	return <div id="level"></div>;
 }
