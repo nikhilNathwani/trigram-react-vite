@@ -22,6 +22,18 @@ export default function App() {
 		Array.from({ length: 1 + wordLength_max - wordLength_start }, () => "")
 	);
 
+	function startLevel() {
+		return;
+	}
+
+	function addLetter() {
+		return;
+	}
+
+	function deleteLetter() {
+		return;
+	}
+
 	return (
 		<div id="app">
 			<TitleScreen></TitleScreen>
